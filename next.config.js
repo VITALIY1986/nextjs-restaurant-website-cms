@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   images: {
         formats: ['image/avif', 'image/webp'],
-        domains: [ 'imgix.cosmicjs.com' ],
+        domains: [ 'nextjs-restaurant-website-cms.vercel.app' ],
     },
 }
 

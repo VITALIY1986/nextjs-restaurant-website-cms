@@ -11,7 +11,7 @@ import styles from './styles.module.scss';
 
 const Navbar = ({ navbarInfo }) => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  
+  console.log(navbarInfo);
   const navbarItems = [navbarInfo?.metadata?.about, navbarInfo?.metadata?.contact, navbarInfo?.metadata?.home, navbarInfo?.metadata?.menu];
 
   const handleToggle = () => {
@@ -23,7 +23,7 @@ const Navbar = ({ navbarInfo }) => {
       <Link href='/#home' passHref>
         <div className={styles.navbar_logo}>
           <Image
-            src={navbarInfo?.metadata?.logo?.imgix_url || images?.gericht}
+            src='https://nextjs-restaurant-website-cms.vercel.app/_next/image?url=https%3A%2F%2Fimgix.cosmicjs.com%2F595ffb70-b6ae-11ec-a642-7195085ee56f-gericht.png&w=750&q=75'
             layout='fill'
             objectFit='cover'
             alt='logo' />
